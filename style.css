@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header{
@@ -11,6 +12,8 @@ header{
 .header-icons {
   display: flex;
   position: absolute;
+  top: 48px;
+  right: 24.5px;
 }
 
 .circle {
@@ -19,6 +22,40 @@ header{
   border-radius: 50%;
   text-align: center;
   font-size: 32px;
+  border: 1px solid rgb(255, 255, 255);
+  margin-left: 6px;
+}
+
+.social-link {
+  color: white;
+}
+
+.header-text-container {
+  position: absolute;
+  top: 121px;
+  left: 24px;
+}
+
+.header-name {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  color: white;
+}
+
+.header-title {
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.header-profile-image {
+  position: absolute;
+  top: 356px;
+  right: 24px;
+  bottom: -16px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
   border: 1px solid rgb(255, 255, 255);
 }
 
