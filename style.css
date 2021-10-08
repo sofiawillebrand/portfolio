@@ -181,12 +181,44 @@ header{
   font-size: 17px;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.project-second-heading {
+  font-family: 'Montserrat';
+  color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 25px;
 }
 
 .project-text {
+  margin-top: 0;
   font-family: Roboto;
   font-size: 17px;
   line-height: 29px;
+  margin-bottom: 0;
+}
+
+.code-tags {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.code-tag-text {
+  font-family: 'Roboto';
+  font-size: 9px;
+  line-height: 11px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.01em;
+  background-color:  #dffde4;
+  padding: 6px;
+  margin-right: 8px;
 }
 
 @media (min-width: 768px) {
