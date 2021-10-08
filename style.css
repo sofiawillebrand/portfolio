@@ -40,12 +40,24 @@ header{
   font-family: 'Roboto';
   text-transform: uppercase;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .header-title {
   color: white;
   font-weight: 700;
   font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-underscore {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .header-profile-image {
