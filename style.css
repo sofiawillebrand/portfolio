@@ -3,7 +3,28 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.bold-style {
+  font-weight: 700;
+}
+
+.portfolio-section:nth-child(2n) {
+  background-color: #F4F4F4;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.header-container {
+  position: relative;
+  width: 375px;
+  margin: 0 auto;
+}
+
 header{
+  position: relative;
   width:100%;
   height:520px;
   background-image:url("./images/header-image.png");
@@ -24,6 +45,7 @@ header{
   font-size: 32px;
   border: 1px solid rgb(255, 255, 255);
   margin-left: 6px;
+  align-items: center;
 }
 
 .social-link {
@@ -34,6 +56,10 @@ header{
   position: absolute;
   top: 121px;
   left: 24px;
+  height: 202px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header-name {
@@ -42,6 +68,8 @@ header{
   color: white;
   margin: 0;
   padding: 0;
+  line-height: 18px;
+  letter-spacing: 0.04em;
 }
 
 .header-title {
@@ -50,6 +78,7 @@ header{
   font-size: 40px;
   margin: 0;
   padding: 0;
+  line-height: 49px;
 }
 
 .header-underscore {
@@ -58,6 +87,7 @@ header{
   font-size: 24px;
   margin: 0;
   padding: 0;
+  line-height: 40px;
 }
 
 .header-profile-image {
@@ -68,31 +98,30 @@ header{
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 1px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
 }
 
-.portfolio-section:nth-child(2n) {
-  background-color: #F4F4F4;
-}
-
-.container {
-  width: 320px;
-  margin: 0 auto;
+.intro-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .sections-heading {
-	background-color: #fa382f;
+	background-color: #3a954e;
   font-size: 22px;
   font-weight: bold;
 	color: #fff;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 3px;
+	padding-left: 3px;
+  padding-right: 3px;
 }
 
 .heading-container {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .image-container {
@@ -105,7 +134,7 @@ header{
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(43, 89, 226, 0.5);
+	background: rgba(109, 125, 173, 0.5);
 }
 
 .image {
@@ -115,6 +144,10 @@ header{
 
 @media (min-width: 768px) {
   .container {
+    width: 768px;
+  }
+
+  .header-container {
     width: 768px;
   }
 }
