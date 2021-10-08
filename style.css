@@ -193,7 +193,7 @@ header{
   line-height: 25px;
 }
 
-.project-text {
+.article-text {
   margin-top: 0;
   font-family: Roboto;
   font-size: 17px;
@@ -219,6 +219,36 @@ header{
   background-color:  #dffde4;
   padding: 6px;
   margin-right: 8px;
+}
+
+.thoughts-date {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.thoughts-header {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.links {
+  text-decoration-color: black;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.thoughts-link {
+  color: black;
+  font-family: 'Roboto';
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
