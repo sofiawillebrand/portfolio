@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #287739;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -5,6 +9,23 @@ body {
 
 .bold-style {
   font-weight: 700;
+}
+
+.line {
+    border: 1px solid var(--primary-color);
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -4px;
+    margin-right: 10px;
 }
 
 .portfolio-section:nth-child(2n) {
@@ -102,12 +123,12 @@ header{
 }
 
 .intro-text {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 49px;
+  margin-bottom: 43px;
 }
 
 .sections-heading {
-	background-color: #3a954e;
+	background-color: var(--primary-color);
   font-size: 22px;
   font-weight: bold;
 	color: #fff;
@@ -129,17 +150,43 @@ header{
 }
 
 .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(109, 125, 173, 0.5);
+	background: rgba(49, 73, 139, 0.4);
+}
+
+.overlay-text {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: white;
 }
 
 .image {
 	width: 100%;
 	display: block;
+}
+
+.project-heading {
+  font-family: 'roboto';
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 17px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.project-text {
+  font-family: Roboto;
+  font-size: 17px;
+  line-height: 29px;
 }
 
 @media (min-width: 768px) {
@@ -149,5 +196,9 @@ header{
 
   .header-container {
     width: 768px;
+  }
+
+  .line {
+    width: 60px;
   }
 }
