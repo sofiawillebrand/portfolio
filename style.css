@@ -59,18 +59,35 @@ header{
 }
 
 .circle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 40px;
-  line-height: 40px;
+  height: 40px;
   border-radius: 50%;
-  text-align: center;
-  font-size: 32px;
   border: 1px solid rgb(255, 255, 255);
   margin-left: 6px;
+}
+
+.circle-big {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  margin-left: 6px;
 }
 
 .social-link {
   color: white;
+  font-size:24px;
+}
+
+.social-link-big {
+  color: var(--primary-color);
+  font-size:24px;
 }
 
 .header-text-container {
@@ -131,7 +148,7 @@ header{
 	background-color: var(--primary-color);
   font-size: 22px;
   font-weight: bold;
-	color: #fff;
+	color: white;
 	text-align: center;
 	text-transform: uppercase;
 	padding-left: 3px;
@@ -216,7 +233,7 @@ header{
   align-items: center;
   text-align: center;
   letter-spacing: 0.01em;
-  background-color:  #dffde4;
+  background-color:  #b7fbc2;
   padding: 6px;
   margin-right: 8px;
 }
@@ -228,6 +245,7 @@ header{
   color: var(--primary-color);
   text-transform: uppercase;
   margin-bottom: 0;
+  margin-top: 30px;
 }
 
 .thoughts-header {
@@ -249,6 +267,52 @@ header{
   color: black;
   font-family: 'Roboto';
   font-weight: 700;
+}
+
+.skill-list-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skill-list {
+  font-family: 'Roboto';
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  line-height: 29px;
+  padding-top: 6px;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  color: var(--primary-color);
+}
+
+.footer-header {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
