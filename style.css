@@ -329,7 +329,7 @@ header{
   border-color: var(--secondary-color);
 }
 
-.social-link-big:hover p {
+.social-link-big:hover .social-heading {
   color: var(--secondary-color);
   font-size: 12px;
 }
@@ -367,6 +367,206 @@ header{
   font-size: 17px;
   line-height: 10px; 
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+
+  .header-container {
+    width: 750px;
+  }
+
+  header{
+    height:500px;
+    background-image:url("./images/header-image-2.png");
+  }
+  
+  .header-icons {
+    top: 80px;
+    right: 0px;
+  }
+  
+  .circle {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .social-link {
+    font-size:28px;
+  }
+  
+  .header-text-container {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    height: 339px;
+  }
+  
+  .header-name {
+    font-size: 28px;
+    line-height: 37px;
+  }
+  
+  .header-title {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  
+  .header-underscore {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .header-profile-image {
+    top: 270px;
+    right: 0px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .line {
+    width: 80px;
+  }
+
+  .dot {
+    margin-left: -10px;
+  }
+
+  .intro-text {
+    font-size: 20px;
+    line-height: 50px;
+    margin-bottom: 109px;
+    margin-top: 120px;
+  }
+
+  .tech-text {
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 109px;
+  }
+
+  .sections-heading {
+    font-size: 48px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  .heading-container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .main-projects, .thoughts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 54px;
+  }
+  
+  .project-heading {
+    font-size: 25px;
+  }
+  
+  .project-second-heading {
+    font-size: 38px;
+    line-height: 47px;
+  }
+
+  .article-text {
+    font-size: 25px;
+    line-height: 41px;
+  }
+  
+  .code-tag-text {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .project-heading-underline {
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+  }
+
+  .article-text-underline {
+    font-size: 25px;
+    line-height: 41px;
+    display: inline;
+    text-decoration: underline;
+  }
+
+  .heading-big-screen {
+    display: inline;
+  }
+
+  .thoughts-container article:last-child {
+    display: inline;
+  }
+  
+  .thoughts-date {
+    font-size: 25px;
+  }
+  
+  .thoughts-header {
+    font-size: 30px;
+  }
+  
+  .thoughts-date-underline {
+    font-size: 25px;
+    text-decoration: underline;
+  }
+  
+  .skill-list-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .skill-list {
+    font-size: 25px;
+  }
+  
+  .social-container {
+    margin-bottom: 100px;
+  }
+  
+  .circle-big {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  
+  .social-link-big {
+    font-size: 60px;
+  }
+  
+  .social-heading {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .social-link-big:hover {
+    color: var(--secondary-color);
+    font-size: 70px;
+  }
+  
+  .social-link-big:hover .social-heading {
+    font-size: 30px;
+  }
+  
+  .footer {
+    height: 570px; 
+  }
+  
+  .footer-header {
+    font-size: 38px;
+  }
+  
+  .footer-paragraph {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -426,14 +626,6 @@ header{
     bottom: -16px;
     width: 333px;
     height: 333px;
-  }
-
-  .line {
-    width: 80px;
-  }
-
-  .dot {
-    margin-left: -10px;
   }
 
   .intro-text {
@@ -547,6 +739,15 @@ header{
   .social-heading {
     font-size: 25px;
     line-height: 41px;
+  }
+
+  .social-link-big:hover {
+    color: var(--secondary-color);
+    font-size: 70px;
+  }
+  
+  .social-link-big:hover .social-heading {
+    font-size: 30px;
   }
   
   .footer {
