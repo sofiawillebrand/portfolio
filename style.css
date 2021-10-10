@@ -1,5 +1,6 @@
 :root {
   --primary-color: #287739;
+  --secondary-color: rgb(141, 197, 133);
 }
 
 body {
@@ -72,6 +73,11 @@ header{
 .social-link {
   color: white;
   font-size:24px;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: var(--primary-color)
 }
 
 .header-text-container {
@@ -311,6 +317,21 @@ header{
 .social-link-big {
   color: var(--primary-color);
   font-size:24px;
+  text-decoration: none;
+}
+
+.social-link-big:hover {
+  color: var(--secondary-color);
+  font-size: 28px;
+}
+
+.social-link-big:hover .circle-big {
+  border-color: var(--secondary-color);
+}
+
+.social-link-big:hover p {
+  color: var(--secondary-color);
+  font-size: 12px;
 }
 
 .social-heading {
@@ -321,6 +342,7 @@ header{
   line-height: 13px;
   color: var(--primary-color);
 }
+
 
 .footer {
   height: 302px; 
