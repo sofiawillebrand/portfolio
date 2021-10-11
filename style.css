@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #287739;
+  --primary-color: #28853c;
   --secondary-color: rgb(141, 197, 133);
 }
 
@@ -12,44 +12,34 @@ body {
   font-weight: 700;
 }
 
-.line {
-    border: 1px solid var(--primary-color);
-    width: 40px;
-    display: inline-block;
-    margin-bottom: 4px;
-}
-
-.dot {
-    height: 10px;
-    width: 10px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: -4px;
-    margin-right: 10px;
-}
-
 .portfolio-section:nth-child(2n) {
   background-color: #F4F4F4;
 }
 
 .container {
-  width: 320px;
+  width: 85%;
+  max-width: 1200px;
   margin: 0 auto;
   overflow: auto;
 }
 
 .header-container {
   position: relative;
-  width: 375px;
+  width: 85%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+/* image src: https://unsplash.com/photos/qzgN45hseN0 */
 header{
   position: relative;
   width:100%;
-  height:520px;
-  background-image:url("./images/header-image.png");
+  height:480px;
+  background-image:linear-gradient(rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url("./images/header-forest-small.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .header-icons {
@@ -77,7 +67,7 @@ header{
 }
 
 .social-link:hover {
-  color: var(--primary-color)
+  color: var(--secondary-color)
 }
 
 .header-text-container {
@@ -118,15 +108,35 @@ header{
   line-height: 40px;
 }
 
+.color {
+  color: var(--secondary-color);
+}
+
 .header-profile-image {
   position: absolute;
-  top: 356px;
+  top: 326px;
   right: 24px;
-  bottom: -16px;
   width: 180px;
   height: 180px;
   border-radius: 50%;
   border: 3px solid rgb(255, 255, 255);
+}
+
+.line {
+  border: 1px solid var(--primary-color);
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -4px;
+  margin-right: 10px;
 }
 
 .intro-text {
@@ -151,6 +161,11 @@ header{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.color-2 {
+  color: var(--primary-color);
+}
+
 
 .image-container {
   position: relative;
@@ -369,18 +384,12 @@ header{
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-
-  .header-container {
-    width: 750px;
-  }
+@media (min-width: 640px) {
 
   header{
     height:500px;
-    background-image:url("./images/header-image-2.png");
+    background-image:linear-gradient(rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url("./images/header-forest-medium.jpg");
+    
   }
   
   .header-icons {
@@ -405,17 +414,17 @@ header{
   }
   
   .header-name {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 37px;
   }
   
   .header-title {
-    font-size: 60px;
-    line-height: 80px;
+    font-size: 52px;
+    line-height: 70px;
   }
   
   .header-underscore {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 50px;
   }
   
@@ -454,7 +463,7 @@ header{
   }
   
   .heading-container {
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 50px;
   }
 
@@ -564,17 +573,10 @@ header{
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 1100px;
-  }
-
-  .header-container {
-    width: 1100px;
-  }
-
+  
   header{
     height:668px;
-    background-image:url("./images/header-image-2.png");
+    background-image:linear-gradient(rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url("./images/header-forest-big.jpg");
   }
   
   .header-icons {
