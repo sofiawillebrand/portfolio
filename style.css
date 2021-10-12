@@ -183,6 +183,10 @@ header{
 	background: rgba(49, 73, 139, 0.4);
 }
 
+.overlay:hover {
+  background: none;
+}
+
 .overlay-text {
   font-size: 28px;
   font-weight: bold;
@@ -191,9 +195,16 @@ header{
   color: white;
 }
 
+.overlay:hover .overlay-text{
+  color: var(--primary-color)
+}
+
 .image {
 	width: 100%;
+  height: 320px;
 	display: block;
+  object-fit: cover;
+  object-position: 0px, 0px;
 }
 
 .project-heading, .project-heading-underline {
