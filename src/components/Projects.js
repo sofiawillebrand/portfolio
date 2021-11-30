@@ -1,6 +1,7 @@
 import React from "react";
 
 import FeaturedProject from "./FeaturedProject";
+import OtherProject from "./OtherProject";
 
 const Projects = (props) => {
   const { featuredProjects } = props;
@@ -15,7 +16,10 @@ const Projects = (props) => {
           {featuredProjects.map(
             (project) =>
               project.featured && (
-                <FeaturedProject project={project} />
+                <FeaturedProject
+                  project={project}
+                  key={project.name}
+                />
               )
           )}
         </div>
@@ -27,25 +31,7 @@ const Projects = (props) => {
         {featuredProjects.map(
           (project) =>
             !project.featured && (
-              <article>
-                <div>
-                  <a href="https://google.com" className="other-link">
-                    <p>
-                      <span className="project-heading-underline">
-                        {project.longname}
-                      </span>
-                      <span className="article-text-underline t">
-                        {project.description}
-                      </span>
-                    </p>
-                  </a>
-                  <div className="code-tags">
-                    {project.tags.map((tag) => (
-                      <span className="code-tag-text">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-              </article>
+              <OtherProject project={project} key={project.name} />
             )
         )}
       </div>

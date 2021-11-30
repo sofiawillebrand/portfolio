@@ -18,11 +18,12 @@ code {
   --paragraph-line-height: 25px;
   --big-text: 40px;
   --big-line-height: 48px;
-  --medium-big-text: 24px;
-  --medium-text: 24px;
+  --medium-big-text: 32px;
+  --medium-text: 23px;
   --medium-small-text: 17px;
   --small-text: 12px;
   --tiny-text: 9px;
+  --margin: 20%/2;
 }
 
 body {
@@ -72,7 +73,7 @@ header {
   display: flex;
   position: absolute;
   top: 48px;
-  right: 24.5px;
+  right: 0;
 }
 
 .circle {
@@ -99,7 +100,7 @@ header {
 .header-text-container {
   position: absolute;
   top: 121px;
-  left: 24px;
+  left: 0;
   height: 202px;
   display: flex;
   flex-direction: column;
@@ -141,7 +142,7 @@ header {
 .header-profile-image {
   position: absolute;
   top: 326px;
-  right: 24px;
+  right: 0;
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -178,13 +179,14 @@ header {
 
 .sections-heading {
   background-color: var(--primary-color);
-  font-size: var(--medium-text);
+  font-size: var(--medium-big-text);
   font-weight: bold;
   color: white;
   text-align: center;
   text-transform: uppercase;
   padding-left: 3px;
   padding-right: 3px;
+  width: max-content;
 }
 
 .heading-container {

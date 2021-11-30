@@ -1,7 +1,6 @@
 import React from "react";
 
 const FeaturedProject = (project) => {
-  console.log(project.project);
   return (
     <article>
       <a
@@ -28,7 +27,9 @@ const FeaturedProject = (project) => {
       <p className="article-text">{project.project.description}</p>
       <div className="code-tags">
         {project.project.tags.map((tag) => (
-          <span className="code-tag-text">{tag}</span>
+          <span className="code-tag-text" key={tag}>
+            {tag}
+          </span>
         ))}
       </div>
     </article>
