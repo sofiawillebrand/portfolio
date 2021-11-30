@@ -13,6 +13,7 @@ const More = () => {
             aria-label="Go to profile on linkedin"
             href="https://www.linkedin.com/in/sofia-willebrand/"
             target="_blank"
+            rel="noreferrer"
           >
             <div class="icon-container">
               <div class="circle-big">
@@ -26,6 +27,7 @@ const More = () => {
             aria-label="Go to profile on github"
             href="https://github.com/sofiawillebrand"
             target="_blank"
+            rel="noreferrer"
           >
             <div class="icon-container">
               <div class="circle-big">
@@ -39,6 +41,7 @@ const More = () => {
             aria-label="Go to profile on stackOverflow"
             href="https://stackoverflow.com/users/7478955/sofia-willebrand"
             target="_blank"
+            rel="noreferrer"
           >
             <div class="icon-container">
               <div class="circle-big">

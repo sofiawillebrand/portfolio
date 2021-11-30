@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         <p className="footer-paragraph">sofiawillebrand@gmail.com</p>
       </div>
     </footer>
-  )
-}
-  
-export default Footer
+  );
+};
+
+export default Footer;
