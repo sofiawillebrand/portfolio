@@ -15,10 +15,12 @@ code {
 :root {
   --primary-color: #28853c;
   --secondary-color: rgb(141, 197, 133);
-  --paragraph-line-height: 25px;
-  --big-text: 40px;
   --big-line-height: 48px;
-  --medium-big-text: 28px;
+  --medium-big-line-height: 40px;
+  --paragraph-line-height: 25px;
+  --tiny-line-height: 11px;
+  --big-text: 40px;
+  --medium-big-text: 24px;
   --medium-text: 22px;
   --medium-small-text: 17px;
   --small-text: 12px;
@@ -26,8 +28,16 @@ code {
   --position-top: 48px;
   --small-circle: 40px;
   --big-circle: 60px;
+  --profile-circle: 180px;
+  --big-circle-margin: 6px;
   --header-text-top: 121px;
-  --header-height: 202px;
+  --header-text-height: 202px;
+  --header-height: 480px;
+  --position-top-profile: 326px;
+  --margin-top-paragraphs: 75px;
+  --margin-bottom-paragraphs: 43px;
+  --margin-header: 20px;
+  --image-height: 250px;
 }
 
 body {
@@ -45,7 +55,7 @@ body {
 
 .container {
   width: 85%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   overflow: auto;
 }
@@ -53,7 +63,7 @@ body {
 .header-container {
   position: relative;
   width: 85%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -61,7 +71,7 @@ body {
 header {
   position: relative;
   width: 100%;
-  height: 480px;
+  height: var(--header-height);
   background-image: linear-gradient(
       rgba(32, 32, 32, 0.5),
       rgba(32, 32, 32, 0.5)
@@ -103,12 +113,12 @@ header {
 
 .header-text-container {
   position: absolute;
-  top: (--header-text-top);
+  top: var(--header-text-top);
   left: 0;
-  height: (--header-height);
+  height: var(--header-text-height);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .header-name {
@@ -117,7 +127,7 @@ header {
   color: white;
   margin: 0;
   padding: 0;
-  line-height: 18px;
+  line-height: var(small-line-height);
   letter-spacing: 0.04em;
 }
 
@@ -136,7 +146,7 @@ header {
   font-size: var(--medium-text);
   margin: 0;
   padding: 0;
-  line-height: 40px;
+  line-height: var(--medium-big-line-height);
 }
 
 .color {
@@ -145,10 +155,10 @@ header {
 
 .header-profile-image {
   position: absolute;
-  top: 326px;
+  top: var(--position-top-profile);
   right: 0;
-  width: 180px;
-  height: 180px;
+  width: var(--profile-circle);
+  height: var(--profile-circle);
   border-radius: 50%;
   border: 3px solid rgb(255, 255, 255);
 }
@@ -171,14 +181,16 @@ header {
 }
 
 .intro-text {
+  font-size: var(--medium-small-text);
   line-height: var(--paragraph-line-height);
-  margin-top: 75px;
-  margin-bottom: 43px;
+  margin-top: var(--margin-top-paragraphs);
+  margin-bottom: var(--margin-bottom-paragraphs);
 }
 
 .tech-text {
+  font-size: var(--medium-small-text);
   line-height: var(--paragraph-line-height);
-  margin-bottom: 43px;
+  margin-bottom: var(--margin-bottom-paragraphs);
 }
 
 .sections-heading {
@@ -190,14 +202,13 @@ header {
   text-transform: uppercase;
   padding-left: 3px;
   padding-right: 3px;
-  width: min-content;
 }
 
 .heading-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: var(--margin-header);
+  margin-bottom: var(--margin-header);
 }
 
 .color-2 {
@@ -247,8 +258,15 @@ header {
   object-position: 0 0;
 }
 
-.project-heading,
-.project-heading-underline {
+.image-thoughts {
+  width: 100%;
+  height: var(--image-height);
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.project-heading {
   font-family: "roboto";
   font-weight: bold;
   color: var(--primary-color);
@@ -264,7 +282,7 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   font-size: var(--medium-text);
-  line-height: 25px;
+  line-height: var(--paragraph-line-height);
 }
 
 .article-text,
@@ -291,7 +309,7 @@ header {
 .code-tag-text {
   font-family: "Roboto";
   font-size: var(--tiny-text);
-  line-height: 11px;
+  line-height: var(--tiny-line-height);
   display: flex;
   align-items: center;
   text-align: center;
@@ -302,16 +320,11 @@ header {
   margin-right: 6px;
 }
 
-.heading-big-screen {
-  display: none;
-}
-
 .thoughts-container {
   margin-bottom: 40px;
 }
 
-.thoughts-date,
-.thoughts-date-underline {
+.thoughts-date {
   font-family: "Roboto";
   font-weight: 400;
   font-size: var(--medium-small-text);
@@ -355,7 +368,7 @@ header {
   padding: 0;
   margin: 0;
   font-size: var(--medium-small-text);
-  line-height: 29px;
+  line-height: var(--paragraph-line-height);
   padding-top: 6px;
 }
 
@@ -379,7 +392,8 @@ header {
   height: var(--big-circle);
   border-radius: 50%;
   border: 1px solid var(--primary-color);
-  margin-left: 6px;
+  margin-left: var(--big-circle-margin);
+  margin-right: var(--big-circle-margin);
 }
 
 .social-link-big {
@@ -407,12 +421,12 @@ header {
   font-style: normal;
   font-weight: 700;
   font-size: var(--small-text);
-  line-height: 13px;
+  line-height: var(--tiny-line-height);
   color: var(--primary-color);
 }
 
 .footer {
-  height: 302px;
+  height: var(--header-height);
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
@@ -432,7 +446,7 @@ header {
 .footer-paragraph {
   color: white;
   font-size: var(--medium-small-text);
-  line-height: 10px;
+  line-height: var(--tiny-line-height);
   text-align: center;
 }
 
@@ -440,47 +454,35 @@ header {
   :root {
     --primary-color: #28853c;
     --secondary-color: rgb(141, 197, 133);
-    --paragraph-line-height: 25px;
-    --big-text: 40px;
-    --big-line-height: 48px;
-    --medium-big-text: 28px;
-    --medium-text: 22px;
-    --medium-small-text: 18px;
+    --big-line-height: 60px;
+    --medium-big-line-height: 46px;
+    --paragraph-line-height: 27px;
+    --tiny-line-height: 14px;
+    --big-text: 48px;
+    --medium-big-text: 32px;
+    --medium-text: 28px;
+    --medium-small-text: 20px;
     --small-text: 16px;
     --tiny-text: 12px;
-    --position-top: 80px;
-    --small-circle: 40px;
-    --big-circle: 60px;
-    --header-text-top: 120px;
-    --header-height: 339px;
+    --position-top: 48px;
+    --small-circle: 60px;
+    --big-circle: 80px;
+    --profile-circle: 240px;
+    --big-circle-margin: 10px;
+    --header-text-top: 135px;
+    --header-text-height: 202px;
+    --header-height: 480px;
+    --position-top-profile: 270px;
+    --margin-header: 25px;
+    --image-height: 350px;
   }
 
   header {
-    height: 500px;
     background-image: linear-gradient(
         rgba(32, 32, 32, 0.5),
         rgba(32, 32, 32, 0.5)
       ),
       url("/src/assets/header-forest-medium.jpg");
-  }
-
-  .header-name {
-    line-height: 37px;
-  }
-
-  .header-title {
-    line-height: 70px;
-  }
-
-  .header-underscore {
-    line-height: 50px;
-  }
-
-  .header-profile-image {
-    top: 270px;
-    right: 0px;
-    width: 250px;
-    height: 250px;
   }
 
   .line {
@@ -489,15 +491,6 @@ header {
 
   .dot {
     margin-left: -10px;
-  }
-
-  .intro-text {
-    margin-bottom: 80px;
-    margin-top: 80px;
-  }
-
-  .tech-text {
-    margin-bottom: 80px;
   }
 
   .sections-heading {
@@ -510,58 +503,36 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 44px;
   }
-
-  .project-second-heading {
-    line-height: 47px;
-  }
-
-  .article-text {
-    line-height: 30px;
-  }
-
-  .code-tag-text {
-    margin-top: 6px;
-  }
-
-  .project-heading-underline {
-    text-decoration: underline;
-    text-decoration-color: var(--primary-color);
-  }
-
-  .article-text-underline {
-    line-height: 30px;
-    display: inline;
-  }
-
-  .heading-big-screen {
-    display: inline;
-  }
-
-  .thoughts-date-underline {
-    text-decoration: underline;
-  }
-
-  .social-container {
-    margin-bottom: 100px;
-  }
-
-  .circle-big {
-    margin-right: 30px;
-    margin-left: 30px;
-  }
-
-  .social-heading {
-    line-height: 41px;
-  }
-
-  .footer {
-    height: 470px;
-  }
 }
 
 @media (min-width: 1200px) {
+  :root {
+    --primary-color: #28853c;
+    --secondary-color: rgb(141, 197, 133);
+    --big-line-height: 80px;
+    --medium-big-line-height: 52px;
+    --paragraph-line-height: 32px;
+    --tiny-line-height: 14px;
+    --big-text: 60px;
+    --medium-big-text: 42px;
+    --medium-text: 32px;
+    --medium-small-text: 24px;
+    --small-text: 20px;
+    --tiny-text: 14px;
+    --position-top: 48px;
+    --small-circle: 80px;
+    --big-circle: 100px;
+    --profile-circle: 280px;
+    --big-circle-margin: 14px;
+    --header-text-top: 135px;
+    --header-text-height: 202px;
+    --header-height: 520px;
+    --position-top-profile: 270px;
+    --margin-header: 30px;
+    --image-height: 400px;
+  }
+
   header {
-    height: 668px;
     background-image: linear-gradient(
         rgba(32, 32, 32, 0.5),
         rgba(32, 32, 32, 0.5)
@@ -569,49 +540,8 @@ header {
       url("/src/assets/header-forest-big.jpg");
   }
 
-  .header-icons {
-    top: 102px;
-    right: 0px;
-  }
-
   .circle {
     margin-left: 6px;
-  }
-
-  .header-text-container {
-    top: 206px;
-    height: 339px;
-  }
-
-  .header-name {
-    line-height: 37px;
-  }
-
-  .header-title {
-    line-height: 100px;
-  }
-
-  .header-underscore {
-    line-height: 78px;
-  }
-
-  .header-profile-image {
-    top: 378px;
-    right: 0px;
-    bottom: -16px;
-    width: 333px;
-    height: 333px;
-  }
-
-  .intro-text {
-    line-height: 50px;
-    margin-bottom: 109px;
-    margin-top: 120px;
-  }
-
-  .tech-text {
-    line-height: 50px;
-    margin-bottom: 109px;
   }
 
   .sections-heading {
@@ -619,41 +549,8 @@ header {
     padding-right: 8px;
   }
 
-  .heading-container {
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
-
   .main-projects,
   .thoughts-container {
     grid-column-gap: 54px;
-  }
-
-  .project-second-heading {
-    line-height: 47px;
-  }
-
-  .article-text {
-    line-height: 41px;
-  }
-
-  .article-text-underline {
-    line-height: 41px;
-  }
-
-  .skill-list-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .social-container {
-    margin-bottom: 100px;
-  }
-
-  .social-heading {
-    line-height: 41px;
-  }
-
-  .footer {
-    height: 570px;
   }
 }

@@ -5,17 +5,14 @@ const Thoughts = () => {
     <section className="portfolio-section">
       <div className="container">
         <div className="heading-container">
-          <h1 className="sections-heading">
-            My thoughts{" "}
-            <span className="heading-big-screen"> about code</span>
-          </h1>
+          <h1 className="sections-heading">My thoughts </h1>
         </div>
 
         <div className="thoughts-container">
           <article>
             <div className="image-container">
               <img
-                className="image"
+                className="image-thoughts"
                 src="../assets/confused-monkey.jfif"
                 alt=""
               />
