@@ -1,7 +1,9 @@
 # portfolio
 
 ## Description
-This project was part of the Technigo bootcamp and is a portfolio of some of my projects. 
+
+A portfolio with information about me (Sofia Willebrand), my skills and my own projects.
 
 ## View it live
+
 https://sofiawillebrand-portfolio.netlify.app/
