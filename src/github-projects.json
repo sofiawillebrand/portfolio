@@ -1,0 +1,131 @@
+[
+  {
+    "featured": true,
+    "name": "Happy Thoughts",
+    "longname": "Twitter-like app for sending happy thoughts", 
+    "description": "Webpage built with React where a user can send happy thoughts, see what are making other people happy and like posts.",
+    "tags": [
+      "React",
+      "JavaScript",
+      "HTML5",
+      "CSS"
+    ],
+    "imagesrc": "./assets/project-happy-thoughts.PNG",
+    "netlify": "https://happy-thoughts-sofia-willebrand.netlify.app/",
+    "github": "https://github.com/sofiawillebrand/project-happy-thoughts"
+  },
+  {
+    "featured": true,
+    "name": "Beer Survey",
+    "longname": "Survey built with React", 
+    "description": "Survey built with React where the user can create an order for a beer-calender.",
+    "tags": [
+      "React",
+      "JavaScript",
+      "HTML5",
+      "CSS"
+    ],
+    "imagesrc": "./assets/project-survey.PNG",
+    "netlify": "https://beer-survey-sofia-willebrand.netlify.app/",
+    "github": "https://github.com/sofiawillebrand/project-survey"
+  },
+  {
+    "featured": false,
+    "name": "Music releases",
+    "longname": "Website with albums and singles built with React.", 
+    "description": "Website displaying the latest releases of albums and singles with links to spotify, built with React.",
+    "tags": [
+      "React",
+      "JavaScript",
+      "HTML5",
+      "CSS"
+    ],
+    "imagesrc": "./assets/project-happy-thoughts.PNG",
+    "netlify": "https://maja-sofia-week9-project-music-releases.netlify.app/",
+    "github": "https://github.com/sofiawillebrand/project-music-releases"
+  },
+  {
+    "featured": true,
+    "name": "Weather app",
+    "longname": "App built with JavaScript", 
+    "description": "A website that displays the weather of the city that you search for.",
+    "tags": [
+      "JavaScript",
+      "HTML5",
+      "CSS", 
+      "API"
+    ],
+    "imagesrc": "./assets/project-weather-app.PNG",
+    "netlify": "https://emeliecp-sofia-maria-maja-linnea-week6-weather-app.netlify.app/",
+    "github": "https://github.com/sofiawillebrand/project-weather-app"
+  },
+  {
+    "featured": true,
+    "name": "Guess Who",
+    "longname": "Game built with JavaScript", 
+    "description": "Play the game Guess Who!, with two different themes to choose from. Webpage built with JavaScript ES6, HTML and CSS.",
+    "tags": [
+      "JavaScript",
+      "HTML5",
+      "CSS"
+    ],
+    "imagesrc": "./assets/project-guess-who.PNG",
+    "netlify": "https://app.netlify.com/sites/sofiawillebrand-week5-guess-who",
+    "github": "https://github.com/sofiawillebrand/project-guess-who"
+  },
+  {
+    "featured": false,
+    "name": "Chat bot",
+    "longname": "Chat bot built with JavaScript", 
+    "description": "Responsive web site using HTML, CSS and JavaScript ES6 for interesting cat facts",
+    "tags": [
+      "JavaScript",
+      "HTML5",
+      "CSS"
+    ],
+    "imagesrc": "./assets/project-chat-bot.PNG",
+    "netlify": "https://elephants1-week-4-chatbot.netlify.app/",
+    "github": "https://github.com/sofiawillebrand/project-chatbot"
+  },
+  {
+    "featured": false,
+    "name": "GitHub tracker",
+    "longname": "Tracker of projects using fetch", 
+    "description": "A webpage gathering my GitHub projects performed during the Technigo Bootcamp.",
+    "tags": [
+      "JavaScript",
+      "HTML5",
+      "CSS", 
+      "API"
+    ],
+    "imagesrc": "./assets/project-github-tracker.PNG",
+    "netlify": "https://github-tracker-sofia-willebrand.netlify.app/",
+    "github": "https://github.com/sofiawillebrand/project-github-tracker"
+  }, 
+  {
+    "featured": false,
+    "name": "Doggy-daycare",
+    "longname": "Sign up for a doggy daycare using forms", 
+    "description": "Project aimed to introduce forms in HTML and how to style them using CSS.",
+    "tags": [
+      "HTML5",
+      "CSS"
+    ],
+    "imagesrc": "./assets/project-doggy-daycare.PNG",
+    "netlify": "https://doggy-daycare-sofia-willebrand.netlify.app/",
+    "github": "https://github.com/sofiawillebrand/project-business-site"
+  },
+  {
+    "featured": false,
+    "name": "News site",
+    "longname": "Environmental News Site with HTML", 
+    "description": "Intro project during the Technigo Bootcamp, built with HTML and CSS. The aim was to create a SPA with news-articles",
+    "tags": [
+      "HTML5",
+      "CSS"
+    ],
+    "imagesrc": "./assets/project-news-site.PNG",
+    "netlify": "https://environmental-news-sofia-willebrand.netlify.app/",
+    "github": "https://github.com/sofiawillebrand/project-news-site"
+  }
+]
