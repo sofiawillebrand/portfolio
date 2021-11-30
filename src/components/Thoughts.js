@@ -16,73 +16,37 @@ const Thoughts = () => {
             <div className="image-container">
               <img
                 className="image"
-                src="./images/image_6.png"
+                src="../assets/confused-monkey.jfif"
                 alt=""
               />
             </div>
             <div>
-              <p className="thoughts-date">dec 2019</p>
-              <h2 className="thoughts-header">
-                How to stop being scared: learning to love code
-              </h2>
-              <p className="article-text">
-                Writing code is less about “just working”. Instead,
-                it’s much more about creativity. It’s similar to
-                creative writing in that the author architecting a
-                story must use an assortment of tools and components
-                (i.e., content) in a way to satisfy a particular
-                objective.{" "}
+              <p className="thoughts-date">nov 2021</p>
+              <p className="thoughts-header">
+                From biology to frontend development
               </p>
-            </div>
-          </article>
-
-          <article>
-            <div className="image-container">
-              <img
-                className="image"
-                src="./images/image_6.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <p className="thoughts-date">dec 2019</p>
-              <h2 className="thoughts-header">
-                How to stop being scared: learning to love code
-              </h2>
               <p className="article-text">
-                Writing code is less about “just working”. Instead,
-                it’s much more about creativity. It’s similar to
-                creative writing in that the author architecting a
-                story must use an assortment of tools and components
-                (i.e., content) in a way to satisfy a particular
-                objective.{" "}
+                Since I was young I have always believed that I was
+                supposed to work in some way or another as a
+                biologist. Both my parents and their spouses work in
+                that field, and it felt like a natural path for me. I
+                spent five years learning all about biology, ecology,
+                statistics and fieldwork at the university. Then, I
+                started working as an environmental consultant. I
+                liked my job, but I had a feeling something was
+                missing.{" "}
               </p>
+              <a
+                href="https://medium.com/@sofiawillebrand/from-biology-to-frontend-development-95c3f122ee9"
+                className="thoughts-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Read full text on Medium
+              </a>
             </div>
           </article>
         </div>
-
-        <div className="heading-container">
-          <h2 className="project-second-heading">More thoughts</h2>
-        </div>
-        <a href="https://google.com" className="other-link">
-          <p>
-            <span className="thoughts-date-underline">sep 2019.</span>
-            {/* style={{"font-weight: bold"}} */}
-            <span className="article-text-underline">
-              {" "}
-              5 apps that making coding easier
-            </span>
-          </p>
-        </a>
-        <a href="https://google.com" className="other-link">
-          <p>
-            <span className="thoughts-date-underline">aug 2019.</span>
-            {/* style={{"font-weight: bold"}} */}
-            <span className="article-text-underline">
-              List other material that you have written about code
-            </span>
-          </p>
-        </a>
       </div>
     </section>
   );

@@ -18,12 +18,16 @@ code {
   --paragraph-line-height: 25px;
   --big-text: 40px;
   --big-line-height: 48px;
-  --medium-big-text: 32px;
-  --medium-text: 23px;
+  --medium-big-text: 28px;
+  --medium-text: 22px;
   --medium-small-text: 17px;
   --small-text: 12px;
   --tiny-text: 9px;
-  --margin: 20%/2;
+  --position-top: 48px;
+  --small-circle: 40px;
+  --big-circle: 60px;
+  --header-text-top: 121px;
+  --header-height: 202px;
 }
 
 body {
@@ -72,7 +76,7 @@ header {
 .header-icons {
   display: flex;
   position: absolute;
-  top: 48px;
+  top: var(--position-top);
   right: 0;
 }
 
@@ -80,8 +84,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: var(--small-circle);
+  height: var(--small-circle);
   border-radius: 50%;
   border: 2px solid rgb(255, 255, 255);
   margin-left: 6px;
@@ -99,9 +103,9 @@ header {
 
 .header-text-container {
   position: absolute;
-  top: 121px;
+  top: (--header-text-top);
   left: 0;
-  height: 202px;
+  height: (--header-height);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,7 +190,7 @@ header {
   text-transform: uppercase;
   padding-left: 3px;
   padding-right: 3px;
-  width: max-content;
+  width: min-content;
 }
 
 .heading-container {
@@ -267,12 +271,15 @@ header {
 .article-text-underline {
   display: inline-block;
   margin-top: 10px;
-  margin-bottom: 10px;
   font-family: "Roboto";
   font-size: var(--medium-small-text);
   line-height: var(--paragraph-line-height);
   color: black;
   text-decoration-color: black;
+}
+
+.article-text {
+  margin-bottom: 10px;
 }
 
 .code-tags {
@@ -295,16 +302,12 @@ header {
   margin-right: 6px;
 }
 
-.other-link {
-  text-decoration: none;
-}
-
 .heading-big-screen {
   display: none;
 }
 
-.thoughts-container article:last-child {
-  display: none;
+.thoughts-container {
+  margin-bottom: 40px;
 }
 
 .thoughts-date,
@@ -372,8 +375,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: var(--big-circle);
+  height: var(--big-circle);
   border-radius: 50%;
   border: 1px solid var(--primary-color);
   margin-left: 6px;
@@ -434,6 +437,24 @@ header {
 }
 
 @media (min-width: 640px) {
+  :root {
+    --primary-color: #28853c;
+    --secondary-color: rgb(141, 197, 133);
+    --paragraph-line-height: 25px;
+    --big-text: 40px;
+    --big-line-height: 48px;
+    --medium-big-text: 28px;
+    --medium-text: 22px;
+    --medium-small-text: 18px;
+    --small-text: 16px;
+    --tiny-text: 12px;
+    --position-top: 80px;
+    --small-circle: 40px;
+    --big-circle: 60px;
+    --header-text-top: 120px;
+    --header-height: 339px;
+  }
+
   header {
     height: 500px;
     background-image: linear-gradient(
@@ -441,23 +462,6 @@ header {
         rgba(32, 32, 32, 0.5)
       ),
       url("/src/assets/header-forest-medium.jpg");
-  }
-
-  .header-icons {
-    top: 80px;
-    right: 0px;
-  }
-
-  .circle {
-    width: 70px;
-    height: 70px;
-  }
-
-  .header-text-container {
-    position: absolute;
-    top: 120px;
-    left: 0px;
-    height: 339px;
   }
 
   .header-name {
@@ -501,13 +505,7 @@ header {
     padding-right: 8px;
   }
 
-  .heading-container {
-    margin-top: 70px;
-    margin-bottom: 50px;
-  }
-
-  .main-projects,
-  .thoughts-container {
+  .main-projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 44px;
@@ -533,14 +531,9 @@ header {
   .article-text-underline {
     line-height: 30px;
     display: inline;
-    text-decoration: underline;
   }
 
   .heading-big-screen {
-    display: inline;
-  }
-
-  .thoughts-container article:last-child {
     display: inline;
   }
 
@@ -553,8 +546,6 @@ header {
   }
 
   .circle-big {
-    width: 100px;
-    height: 100px;
     margin-right: 30px;
     margin-left: 30px;
   }
@@ -584,15 +575,11 @@ header {
   }
 
   .circle {
-    width: 80px;
-    height: 80px;
     margin-left: 6px;
   }
 
   .header-text-container {
-    position: absolute;
     top: 206px;
-    left: 0px;
     height: 339px;
   }
 
@@ -660,13 +647,6 @@ header {
 
   .social-container {
     margin-bottom: 100px;
-  }
-
-  .circle-big {
-    width: 160px;
-    height: 160px;
-    margin-right: 30px;
-    margin-left: 30px;
   }
 
   .social-heading {
