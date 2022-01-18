@@ -1,16 +1,7 @@
 [
   {
     "featured": true,
-    "name": "Movies",
-    "longname": "Find what to watch with this movie-site",
-    "description": "A website displaying movies based on different categories which you can choose from a drop-down menu. Each movie generated can be clicked on to reach a site where you can read more details about the movie.",
-    "tags": ["React", "JavaScript"],
-    "imagesrc": "./assets/project-movies.PNG",
-    "netlify": "https://popular-movies-database.netlify.app/",
-    "github": "https://github.com/sofiawillebrand/project-movies"
-  },
-  {
-    "featured": true,
+    "display": true,
     "name": "To-do",
     "longname": "A to-do list",
     "description": "A to-do project built with React and Redux. Local storage is used to save the store. The package luxon was used to handle dates.",
@@ -21,6 +12,47 @@
   },
   {
     "featured": true,
+    "display": true,
+    "name": "Logged in?",
+    "longname": "Am I logged in? Find out with this webpage.",
+    "description": "A website where you can sign up, log in and see if you are signed in. The site was built with React, using Node.js and MongoDB to setup the backend.",
+    "tags": ["React", "Node.js", "mongoDB"],
+    "imagesrc": "./assets/project-auth.PNG",
+    "netlify": "https://am-i-logged-in.netlify.app/",
+    "github": "https://github.com/sofiawillebrand/project-auth"
+  },
+  {
+    "featured": true,
+    "display": true,
+    "name": "Movies",
+    "longname": "Find what to watch with this movie-site",
+    "description": "A website displaying movies based on different categories which you can choose from a drop-down menu. Each movie generated can be clicked on to reach a site where you can read more details about the movie.",
+    "tags": ["React", "JavaScript"],
+    "imagesrc": "./assets/project-movies.PNG",
+    "netlify": "https://popular-movies-database.netlify.app/",
+    "github": "https://github.com/sofiawillebrand/project-movies"
+  },
+  {
+    "featured": true,
+    "display": true,
+    "name": "Happy Thoughts",
+    "longname": "Twitter-like app for sending happy thoughts",
+    "description": "Webpage built with React where a user can send happy thoughts, see what are making other people happy and like posts. Backend built with nodejs and MongoDB.",
+    "tags": [
+      "React",
+      "Node.js",
+      "mongoDB",
+      "JavaScript",
+      "HTML5",
+      "CSS"
+    ],
+    "imagesrc": "./assets/project-happy-thoughts.PNG",
+    "netlify": "https://happy-thoughts-sofia-willebrand.netlify.app/",
+    "github": "https://github.com/sofiawillebrand/project-happy-thoughts"
+  },
+  {
+    "featured": false,
+    "display": true,
     "name": "The maze",
     "longname": "A text-based adventure",
     "description": "A webpage which allows a user to navigate a maze, in the form of a text-based adventure, provided by a backend.",
@@ -30,17 +62,8 @@
     "github": "https://github.com/sofiawillebrand/project-labyrinth"
   },
   {
-    "featured": true,
-    "name": "Happy Thoughts",
-    "longname": "Twitter-like app for sending happy thoughts",
-    "description": "Webpage built with React where a user can send happy thoughts, see what are making other people happy and like posts.",
-    "tags": ["React", "JavaScript", "HTML5", "CSS"],
-    "imagesrc": "./assets/project-happy-thoughts.PNG",
-    "netlify": "https://happy-thoughts-sofia-willebrand.netlify.app/",
-    "github": "https://github.com/sofiawillebrand/project-happy-thoughts"
-  },
-  {
     "featured": false,
+    "display": true,
     "name": "Beer Survey",
     "longname": "Survey built with React",
     "description": "Survey built with React where the user can create an order for a beer-calender.",
@@ -51,6 +74,7 @@
   },
   {
     "featured": false,
+    "display": true,
     "name": "Music releases",
     "longname": "Website with albums and singles built with React.",
     "description": "Website displaying the latest releases of albums and singles with links to spotify, built with React.",
@@ -61,6 +85,7 @@
   },
   {
     "featured": false,
+    "display": true,
     "name": "Weather app",
     "longname": "Weather app built with JavaScript",
     "description": "A website that displays the weather of the city that you search for.",
@@ -71,16 +96,18 @@
   },
   {
     "featured": false,
+    "display": true,
     "name": "Guess Who",
     "longname": "Game built with JavaScript",
     "description": "Play the game Guess Who!, with two different themes to choose from. Webpage built with JavaScript ES6, HTML and CSS.",
     "tags": ["JavaScript", "HTML5", "CSS"],
     "imagesrc": "./assets/project-guess-who.PNG",
-    "netlify": "https://app.netlify.com/sites/sofiawillebrand-week5-guess-who",
+    "netlify": "https://guess-who-sofia-willebrand.netlify.app/",
     "github": "https://github.com/sofiawillebrand/project-guess-who"
   },
   {
     "featured": false,
+    "display": true,
     "name": "Chat bot",
     "longname": "Chat bot built with JavaScript",
     "description": "Responsive web site using HTML, CSS and JavaScript ES6 for interesting cat facts",
@@ -91,6 +118,7 @@
   },
   {
     "featured": false,
+    "display": false,
     "name": "GitHub tracker",
     "longname": "Tracker of projects using fetch",
     "description": "A webpage gathering my GitHub projects performed during the Technigo Bootcamp.",
@@ -101,6 +129,7 @@
   },
   {
     "featured": false,
+    "display": false,
     "name": "Doggy-daycare",
     "longname": "Sign up for a doggy daycare using forms",
     "description": "Project aimed to introduce forms in HTML and how to style them using CSS.",
@@ -111,6 +140,7 @@
   },
   {
     "featured": false,
+    "display": true,
     "name": "News site",
     "longname": "Environmental News Site with HTML",
     "description": "Intro project during the Technigo Bootcamp, built with HTML and CSS. The aim was to create a SPA with news-articles",

@@ -15,7 +15,8 @@ const Projects = (props) => {
         <div className="main-projects">
           {featuredProjects.map(
             (project) =>
-              project.featured && (
+              project.featured &&
+              project.display && (
                 <FeaturedProject
                   project={project}
                   key={project.name}
@@ -30,7 +31,8 @@ const Projects = (props) => {
 
         {featuredProjects.map(
           (project) =>
-            !project.featured && (
+            !project.featured &&
+            project.display && (
               <OtherProject project={project} key={project.name} />
             )
         )}
