@@ -9,12 +9,44 @@ const Thoughts = () => {
         </div>
 
         <div className="thoughts-container">
-          <article>
+          <article className="thoughts-flex">
             <div className="image-container">
               <img
                 className="image-thoughts"
-                src="../assets/confused-monkey.jfif"
+                src="../assets/self-five.png"
                 alt=""
+              />
+            </div>
+            <div>
+              <p className="thoughts-date">dec 2021</p>
+              <p className="thoughts-header">
+                Daring to share and feeling satisfied with what you
+                have created
+              </p>
+              <p className="article-text">
+                16 weeks has passed since I started my journey to
+                become a frontend developer. That means that I have
+                managed to create 16 projects, on my own and in pairs
+                with my teammates. It has been challenging and
+                superfun, but there are two parts in particular that I
+                have struggled with.{" "}
+              </p>
+              <a
+                href="https://medium.com/@sofiawillebrand/daring-to-share-and-feeling-satisfied-with-what-you-have-created-353f3834e9f1"
+                className="thoughts-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Read full text on Medium
+              </a>
+            </div>
+          </article>
+          <article className="thoughts-flex">
+            <div className="image-container">
+              <img
+                className="image-thoughts-two"
+                src="../assets/confused-monkey.jfif"
+                alt="confused-monkey"
               />
             </div>
             <div>

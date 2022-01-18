@@ -263,7 +263,16 @@ header {
   height: var(--image-height);
   border-radius: 5px;
   object-fit: cover;
+  object-position: center bottom;
+}
+
+.image-thoughts-two {
+  width: 100%;
+  height: var(--image-height);
+  border-radius: 5px;
+  object-fit: cover;
   object-position: 0 0;
+  margin-top: 30px;
 }
 
 .project-heading {
@@ -552,5 +561,19 @@ header {
   .main-projects,
   .thoughts-container {
     grid-column-gap: 54px;
+  }
+
+  .thoughts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    align-items: flex-start;
+  }
+
+  .thoughts-flex .thoughts-date,
+  .thoughts-flex .image-thoughts,
+  .thoughts-flex .image-thoughts-two {
+    margin-top: 0;
   }
 }
