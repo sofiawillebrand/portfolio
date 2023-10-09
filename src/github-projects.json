@@ -3,9 +3,9 @@
         "featured": true,
         "display": true,
         "name": "Nomad Group",
-        "longname": "Webpage for the company Nomad Group",
-        "description": "The public webpage for the company Nomad Group. Built with React and TypeScript. Focus on responsive design.",
-        "tags": ["React", "TypeScript"],
+        "longname": "Webpage of the company Nomad Group",
+        "description": "The webpage of the company Nomad Group. Built with React, TypeScript and MUI.",
+        "tags": ["React", "TypeScript", "MUI"],
         "imagesrc": "./assets/project-nomad.PNG",
         "netlify": "https://nomadgroup.se/",
         "github": "https://nomadgroup.se/"
