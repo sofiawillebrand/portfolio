@@ -10,8 +10,8 @@ const Tech = () => {
                 <p className="tech-text">
                     {" "}
                     HTML, CSS, Flexbox, <span className="color-2">TypeScript</span>, ES6, JSX,
-                    <span className="color-2">React</span>, <span className="color-2">Svelte</span>, Node.js,{" "}
-                    <span className="color-2">Redux</span>, Responsive design, Web Accessibly, Mob-programming,
+                    <span className="color-2"> React</span>, <span className="color-2">Svelte</span>, Node.js,{" "}
+                    <span className="color-2"> Redux</span>, Responsive design, Web Accessibly, Mob-programming,
                     Pair-programming, Github.{" "}
                 </p>
             </div>
